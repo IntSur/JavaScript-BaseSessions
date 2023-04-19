@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>23-转换为数字型</title>
     <script>
+        //1.parseInt()把字符型转换为数字型 为整型 parseFloat()把字符型转换为数字型 为浮点型
         var age = prompt('Enter a number:');
         var intnum = parseInt(age);
         var floatnum = parseFloat(age);
-        alert('IntNum = ' + intnum);
-        alert('floatnum = ' + floatnum);
         console.log(intnum);
         console.log(floatnum);
+        alert('IntNum = ' + intnum);
+        alert('floatnum = ' + floatnum);
+        //2.Number()把字符串转换为数字型
+        var num = '123';
+        console.log(Number(num));
+        //3.隐式转换 - * /
+        console.log('123' - 1);
+        console.log('123' - '120');
+        console.log('123' * 1);
     </script>
 </head>
 <body>
